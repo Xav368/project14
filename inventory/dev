@@ -1,0 +1,10 @@
+[webservers]
+172.31.44.50
+
+[database]
+172.31.44.5
+
+[bastion]
+172.31.37.56 ansible_connection=local
+
+
