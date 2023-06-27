@@ -38,7 +38,7 @@ pipeline {
           sh 'echo "Deploying to Dev" '
         }
       }
-    
+    }
     stage("clean Up") {
       steps {
         cleanWs()
@@ -46,4 +46,3 @@ pipeline {
       }
     }
   }
-}
