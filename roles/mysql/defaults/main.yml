@@ -119,7 +119,7 @@ community.mysql.mysql_user:
   host: '0.0.0.0'
   password: toooling
   priv: '*.*:ALL,GRANT'
-  state: present
+  #state: present
 
 # Replication settings (replication is only enabled if master/user have values).
 mysql_server_id: "1"
