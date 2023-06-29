@@ -1,10 +1,8 @@
-[webservers]
-172.31.44.50
+[nginx]
+172.31.80.99 ansible_ssh_user='ec2-user'
 
-[database]
-172.31.44.5
+[db]
+172.31.84.48 ansible_ssh_user='ubuntu'
 
-[bastion]
-172.31.37.56 ansible_connection=local
 
 

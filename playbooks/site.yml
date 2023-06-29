@@ -10,10 +10,14 @@
 # - name: Webserver assignment
 #   ansible.builtin.import_playbook: ../static-assignments/webservers.yml
 
-- hosts: database
+- hosts: db
 - name: database assignment
   ansible.builtin.import_playbook: ../static-assignments/database.yml
-  
+
+- hosts: nginx
+- name: nginx assignment
+  ansible.builtin.import_playbook: ../static-assignments/nginx.yml
+
 # - hosts: loadbalancer
 # - name: loadbalancer assignment
 #   ansible.builtin.import_playbook: ../static-assignments/loadbalancer.yml
