@@ -4,7 +4,7 @@
   include_vars: "{{ ansible_os_family }}.yml"
 
 - name: Define nginx_user.
-  community.general.nginx_status_facts:
+  community.general.nginx_status_info:
     nginx_user: "{{ __nginx_user }}"
   when: nginx_user is not defined
 
